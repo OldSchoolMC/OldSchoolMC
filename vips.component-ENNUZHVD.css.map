@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/vips.component/vips.component.css"],
+  "sourcesContent": [".titulo{\r\n  h1{\r\n    text-align: center;\r\n  }\r\n  p{\r\n    font-size: 23px;\r\n    padding-left: 20px;\r\n  }\r\n}\r\n\r\nmain{\r\n  ul li{\r\n    font-size: 20px;\r\n    list-style: none;\r\n  }\r\n}\r\n\r\n"],
+  "mappings": "AAAA,CAAC,OACC,GACE,WAAY,MACd,CAHF,CAAC,OAIC,EACE,UAAW,KACX,aAAc,IAChB,CAGF,KACE,GAAG,GACD,UAAW,KACX,WAAY,IACd",
+  "names": []
+}
