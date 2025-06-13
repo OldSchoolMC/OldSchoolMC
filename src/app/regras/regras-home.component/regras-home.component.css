@@ -1,17 +1,82 @@
-.titulo{
-  h1{
-    text-align: center;
-  }
-  p{
-    font-size: 23px;
-    padding-left: 20px;
-  }
+main {
+  font-family: Arial, sans-serif;
+  background-color: #fdfdfd;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
-main{
-  ul li{
-    font-size: 20px;
-    list-style: none;
-  }
+.blog-post {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background-color: #fff;
 }
 
+.blog-post h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.blog-post img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.blog-post p {
+  margin: 0;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.blog-post ul {
+  padding-left: 1.5rem; /* distância da borda esquerda */
+  margin-bottom: 1.5rem;
+  list-style-type: disc;
+}
+
+.blog-post li {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.blog-post li p {
+  margin: 0.5rem 0 0 0; /* separa o texto da linha de título do <li> */
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.blog-post i {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post h2 {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+.img_craft{
+  width: 400px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .blog-post {
+    padding: 3rem 2rem;
+  }
+
+  .blog-post h1 {
+    font-size: 2.5rem;
+  }
+
+  .blog-post p {
+    font-size: 1.2rem;
+  }
+}
