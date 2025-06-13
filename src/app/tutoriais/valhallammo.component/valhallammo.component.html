@@ -1,0 +1,317 @@
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" ngSkipHydration>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">play_arrow</mat-icon>
+      Começando
+    </ng-template>
+    <main>
+      <div class="blog-post">
+        <h1>Vallhalla MMO</h1>
+        <p>O que é ValhallaMMO? Ele adiciona uma progressão baseada em habilidades (como McMMO e AuraSkills), inspirado nos rpgs.</p>
+        <ul>
+          <li><b>O que ele faz?</b>
+            <p>Revoluciona a progressão vanilla, tornando-a mais lenta e gratificante.
+              Dá aos jogadores mais liberdade para se expressarem e personalizarem sua jornada.
+              Incentiva especialização e escolhas significativas durante o gameplay.</p>
+          </li>
+          <li><b> Resumindo: </b>
+            <p>Evita que os jogadores apressem o jogo e se cansem rápido! </p></li>
+        </ul>
+        <h2> Sistema de raças e classes</h2>
+        <p>Ao entrar no jogo, você cai direto no menu de criação! </p>
+        <p>Escolha sua raça e depois monte seu combo de 3 classes (uma de cada ramo).</p>
+        <h2>Raças</h2>
+        <ul>
+          <li><b>Anões:</b> Mestres da forja e construção! (+crafting, -mobilidade)</li>
+          <li><b> Elfos:</b> Magia pura e conexão com a natureza! (+encantos, -resistência)</li>
+          <li><b>Humanos:</b>Adaptáveis e equilibrados! (+bônus flexível, -sem especialização extrema)</li>
+        </ul>
+
+        <h2>Classes</h2>
+        <p>Você pega 1 de cada ramo pra criar seu build único:</p>
+        <h3>Combate (Lutadores brutais ou astutos)</h3>
+        <table mat-table [dataSource]="combateDataSource" class="mat-elevation-z8 demo-table">
+          <ng-container matColumnDef="tipo">
+            <th mat-header-cell *matHeaderCellDef> Tipo </th>
+            <td mat-cell *matCellDef="let classe"> {{classe.tipo}} </td>
+          </ng-container>
+          <ng-container matColumnDef="descricao">
+            <th mat-header-cell *matHeaderCellDef> Descricao </th>
+            <td mat-cell *matCellDef="let classe"> {{classe.descricao}} </td>
+          </ng-container>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+        <h3>Especialista (Criadores e manipuladores)</h3>
+        <table mat-table [dataSource]="especialistaDataSource" class="mat-elevation-z8 demo-table">
+          <ng-container matColumnDef="tipo">
+            <th mat-header-cell *matHeaderCellDef> Tipo </th>
+            <td mat-cell *matCellDef="let classe"> {{classe.tipo}} </td>
+          </ng-container>
+          <ng-container matColumnDef="descricao">
+            <th mat-header-cell *matHeaderCellDef> Descricao </th>
+            <td mat-cell *matCellDef="let classe"> {{classe.descricao}} </td>
+          </ng-container>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+        <h3>Provedores (Coleta e transformação)</h3>
+        <table mat-table [dataSource]="provedoresDataSource" class="mat-elevation-z8 demo-table">
+          <ng-container matColumnDef="tipo">
+            <th mat-header-cell *matHeaderCellDef> Tipo </th>
+            <td mat-cell *matCellDef="let classe"> {{classe.tipo}} </td>
+          </ng-container>
+          <ng-container matColumnDef="descricao">
+            <th mat-header-cell *matHeaderCellDef> Descricao </th>
+            <td mat-cell *matCellDef="let classe"> {{classe.descricao}} </td>
+          </ng-container>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </div>
+    </main>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">construction</mat-icon>
+      Crafts
+    </ng-template>
+    <main>
+      <div class="blog-post">
+        <h1>Crafts</h1>
+        <p>Primeiro, você vai perceber que não pode mais craftar equipamentos de ferro, ouro e diamante com materiais brutos. Seus materiais precisam de um tratamento extra, e você vai precisar de uma bigorna!</p>
+        <h2>Ferro e ouro</h2>
+        <p>Aqueça os lingotes em um forno, alto-forno ou fogueira:</p>
+        <img src="imagens/valhalla mmo/img.png" alt="">
+        <i>todas as imagens presentes no site são de autoria do próprio servidor OldschoolMC de minecraft.</i>
+        <h2>Diamante</h2>
+        <p>Torne-os instáveis usando ender pearls:</p>
+        <img src="imagens/valhalla mmo/img_1.png" alt="">
+        <i>todas as imagens presentes no site são de autoria do próprio servidor OldschoolMC de minecraft.</i>
+        <b>Depois, ao tentar craftar, aparecerá uma mensagem dizendo que você precisa de uma bigorna:</b>
+        <p>Posicione a bigorna a até 5 blocos da mesa de craft:</p>
+        <img src="imagens/valhalla mmo/img_2.png" alt="">
+        <i>todas as imagens presentes no site são de autoria do próprio servidor OldschoolMC de minecraft.</i>
+        <p>Agora você pode craftar equipamentos de ferro, ouro e diamante!</p>
+        <img src="imagens/valhalla mmo/img_3.png" alt="">
+        <img src="imagens/valhalla mmo/img_4.png" alt="">
+        <i>todas as imagens presentes no site são de autoria do próprio servidor OldschoolMC de minecraft.</i>
+
+        <h2>Equipamentos de cobre</h2>
+        <p><b>Novidade!</b> O cobre serve como um intermediário entre pedra e ferro.</p>
+        <p>Como itens de ferro estão mais difíceis de obter, os de cobre permitem minerar os mesmos materiais!</p>
+        <img src="imagens/valhalla mmo/img_5.png" alt="">
+        <i>todas as imagens presentes no site são de autoria do próprio servidor OldschoolMC de minecraft.</i>
+        <h2>Tooltips Explicados</h2>
+        <ul>
+          <li>Masterful - Item de qualidade superior, muito melhor que o padrão do vanilla.</li>
+          <li>Upgrades: 3 -  Número de melhorias que podem ser aplicadas (veja a seção de upgrades)</li>
+          <li>Unfit (Armaduras) - A armadura não se ajusta bem ao seu corpo. Corrija adicionando mais material.</li>
+        </ul>
+        <img src="imagens/valhalla mmo/img_6.png"/>
+        <i>todas as imagens presentes no site são de autoria do próprio servidor OldschoolMC de minecraft.</i>
+        <p> "Untempered / Não temperado" (Ferro/Ouro/Diamante/Cobre) → Itens metálicos fracos e moles quando recém-craftados.</p>
+        <h2>Temperar</h2>
+        <ul>
+          <li>Aqueça o item no forno.</li>
+          <li>Jogue em um caldeirão com água:</li>
+        </ul>
+        <p>Dobra a durabilidade, aumenta velocidade de mineração e dá mais EXP.</p>
+        <img src="imagens/valhalla mmo/img_8.png"/>
+        <img src="imagens/valhalla mmo/img_9.png"/>
+        <i>todas as imagens presentes no site são de autoria do próprio servidor OldschoolMC de minecraft.</i>
+
+        <p><b>"Blunt / Cega" (Armas/ferramentas não de pedra/madeira) → Precisa ser afiado para causar dano máximo.</b></p>
+        <p>Afie segurando botão direito em uma grindstone:</p>
+        <p>Quando faíscas saírem, o item estará afiado (mais dano + EXP de Ferraria).</p>
+        <img src="imagens/valhalla mmo/img_10.png"/>
+        <i>todas as imagens presentes no site são de autoria do próprio servidor OldschoolMC de minecraft.</i>
+        <h2>Craft dos itens</h2>
+        <div class="img_craft">
+          <img src="imagens/valhalla mmo/itens/img.png" alt="" class="img_craft">
+          <img src="imagens/valhalla mmo/itens/img_1.png" alt="" class="img_craft">
+          <img src="imagens/valhalla mmo/itens/img_2.png" alt="" class="img_craft">
+          <img src="imagens/valhalla mmo/itens/img_3.png" alt="" class="img_craft">
+          <img src="imagens/valhalla mmo/itens/img_4.png" alt="" class="img_craft">
+          <img src="imagens/valhalla mmo/itens/img_5.png" alt="" class="img_craft">
+          <img src="imagens/valhalla mmo/itens/img_6.png" alt="" class="img_craft">
+          <img src="imagens/valhalla mmo/itens/img_7.png" alt="" class="img_craft">
+          <img src="imagens/valhalla mmo/itens/img_8.png" alt="" class="img_craft">
+          <img src="imagens/valhalla mmo/itens/img_9.png" alt="" class="img_craft">
+          <img src="imagens/valhalla mmo/itens/img_10.png" alt="" class="img_craft">
+          <i>todas as imagens presentes no site são de autoria do próprio servidor OldschoolMC de minecraft.</i>
+        </div>
+      </div>
+    </main>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">construction</mat-icon>
+      Mecanicas modificadas
+    </ng-template>
+    <main>
+    <div class="blog-post">
+      <h1>Mecânicas modificadas</h1>
+
+      <h2>Armas Personalizadas</h2>
+
+      <h3>Espadas Rapier (leves)</h3>
+      <ul>
+        <li><strong>Vantagens:</strong> Ataque rápido + penetração de armadura</li>
+        <li><strong>Desvantagens:</strong> Sem knockback + dano baixo</li>
+      </ul>
+
+      <h3>Adagas (leves)</h3>
+      <ul>
+        <li><strong>Vantagens:</strong> Crítico alto + velocidade</li>
+        <li><strong>Desvantagens:</strong> Alcance curto</li>
+      </ul>
+
+      <h3>Maças (leves)</h3>
+      <ul>
+        <li><strong>Vantagens:</strong> Chance de atordoar + dano contundente (bom contra armaduras)</li>
+      </ul>
+
+      <h3>Machados Grandes (pesados)</h3>
+      <ul>
+        <li><strong>Vantagens:</strong> Dano altíssimo + crítico</li>
+        <li><strong>Desvantagens:</strong> Ataque lento</li>
+      </ul>
+
+      <h3>Martelos de Guerra (pesados)</h3>
+      <ul>
+        <li><strong>Vantagens:</strong> Atordoar + knockback alto</li>
+        <li><strong>Observação:</strong> Dano contundente</li>
+      </ul>
+
+      <h3>Lanças (pesados)</h3>
+      <ul>
+        <li><strong>Vantagens:</strong> Alcance longo + bônus de movimento</li>
+        <li><strong>Desvantagens:</strong> Dano baixo para arma pesada</li>
+      </ul>
+
+      <img src="imagens\valhalla mmo\img_11.png" alt="Imagem ilustrativa das armas" />
+
+      <h2>Mobs</h2>
+      <p>Escalonam com o nível dos jogadores próximos (Ou seja, quanto mais forte você for, mais fortes serão os mobs).</p>
+
+      <h3>Tipos de Dano</h3>
+      <ul>
+        <li><strong>Radiante:</strong> +200% de dano em mortos-vivos.</li>
+        <li><strong>Necrótico:</strong> +100% em mobs normais, mas 0% em mortos-vivos.</li>
+      </ul>
+
+      <h2>Farm de Mobs Nerfadas</h2>
+      <ul>
+        <li><strong>Farms de XP:</strong> Matar muitos mobs = -80% de EXP adquirida.</li>
+        <li><strong>Farms de Combate:</strong> Matar mais de 20 mobs no mesmo chunk = -95% de EXP adquirida.</li>
+      </ul>
+      <p>Explore o mundo para farmar melhor.</p>
+
+      <h2>Sorte</h2>
+      <p>
+        Cada ponto de Sorte dá 1 reroll em chances de acerto crítico, coleta, etc.
+      </p>
+      <ul>
+        <li><strong>Sorte positiva:</strong> Reroll para sucesso.</li>
+        <li><strong>Sorte negativa:</strong> Reroll para falha.</li>
+      </ul>
+
+      <h2>Sangramento</h2>
+      <p>
+        Causa dano ignorando armadura a cada 40 ticks.
+        Empilhar efeitos de sangramento reduz o intervalo em 5 ticks (até 4 vezes).
+      </p>
+
+    </div></main>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">arrow_upward</mat-icon>
+      Melhorias dos itens
+    </ng-template>
+    <main>
+      <div class="blog-post">
+        <h1>Melhorias dos itens</h1>
+        <p>Cada equipamento começa com 3 slots de upgrade, que podem ser preenchidos com diversas melhorias disponíveis.</p>
+        <h2>Adicionando mais slots</h2>
+        <p>Você pode aumentar o número de slots (até 6 por item) usando estas receitas:</p>
+        @for (imagem of imagens; track imagem) {
+          <img [src]="imagem" alt="Imagem" width="200" />
+        }
+      </div>
+    </main>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">diamond_shine</mat-icon>
+      Trinkets
+    </ng-template>
+    <main>
+      <div class="blog-post">
+        <h1>Trinkets Mágicos</h1>
+
+        <p>Uma função única que permite equipar acessórios mágicos com buffs especiais.</p>
+        <img src="imagens\valhalla mmo\img_12.png" alt="Imagem ilustrativa dos trinkets" />
+
+        <h2>Como Obter:</h2>
+        <ul>
+          <li> Saque de masmorras (mais comum)</li>
+          <li> Recompensas de chefes (como o Wither)</li>
+          <li> Taxa de drop aumenta com Sorte</li>
+          <li> Eventos</li>
+        </ul>
+
+        <h2>Tipos de Trinkets</h2>
+
+        <h3>Amuletos</h3>
+        <ul>
+          <li><strong>Aljava Mágica</strong> → Velocidade + precisão de flechas</li>
+          <li><strong>Amuleto do Vingador</strong> → +Dano corpo a corpo</li>
+          <li><strong>Amuleto da Mania</strong> → ++Dano, mas +Dano recebido</li>
+          <li><strong>Amuleto da Vitalidade</strong> → +Vida máxima</li>
+          <li><strong>Amuleto da Adrenalina</strong> → +Velocidade e pulo duplo</li>
+          <li><strong>Cruz Necklace</strong> → +Tempo de invencibilidade</li>
+        </ul>
+
+        <h3>Anéis</h3>
+        <ul>
+          <li><strong>Anel da Ruptura</strong> → +Penetração de armadura</li>
+          <li><strong>Anel da Proteção</strong> → Redução de dano geral</li>
+          <li><strong>Anel do Alcance</strong> → +Alcance de ataque</li>
+          <li><strong>Anel da Deflexão</strong> → Redução de dano de projéteis</li>
+          <li><strong>Anel de Obsidiana</strong> → Resistência a dano de fogo</li>
+          <li><strong>Anel da Guarda</strong> → Resistência a dano mágico</li>
+        </ul>
+
+        <h3>Outros</h3>
+        <ul>
+          <li><strong>Bandagem Adesiva</strong> → Reduz dano de sangramento</li>
+          <li><strong>Bandagem da Regeneração</strong> → +Cura passiva</li>
+          <li><strong>Bandagem da Precisão</strong> → +Crítico e dano crítico</li>
+          <li><strong>Bezoar</strong> → Resistência a veneno</li>
+          <li><strong>Braçadeira Blindada</strong> → +Armadura +resistência a knockback</li>
+          <li><strong>Bandana da Força</strong> → +Knockback em ataques</li>
+        </ul>
+
+        <h2>Melhorias</h2>
+        <p>
+          Cada trinket pode ser evoluído combinando-o com uma Estrela do Nether no craft, <strong>triplicando seu poder!</strong>
+        </p>
+
+        <h2>Como Equipar</h2>
+        <ul>
+          <li>Use <code>/trinkets</code>.</li>
+          <li>Ou clique direito com o trinket no inventário (se tiver slot livre).</li>
+        </ul>
+
+        <h2>Dicas de Combinações</h2>
+        <ul>
+          <li><strong>Anel da Ruptura</strong> + <strong>Amuleto do Vingador</strong> = Dano absurdo</li>
+          <li><strong>Amuleto da Vitalidade</strong> + <strong>Bandagem da Regeneração</strong> = Tanque imortal 🛡</li>
+        </ul>
+      </div>
+    </main>
+  </mat-tab>
+</mat-tab-group>

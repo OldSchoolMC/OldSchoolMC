@@ -1,0 +1,44 @@
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" ngSkipHydration>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">play_arrow</mat-icon>
+      Começando
+    </ng-template>
+    <main>
+      <div class="blog-post">
+        <h1>Mercado Virtual</h1>
+
+        <p>Utilizamos um sistema de mercado virtual onde os jogadores influenciam os preços, e o plugin equilibra automaticamente a economia. Utilize <code>/market</code> para comprar e vender itens.</p>
+
+        <h2>Como Funciona?</h2>
+
+        <h3>Economia Automatizada</h3>
+        <p>O sistema de "mão invisível" ajusta os preços com base na oferta e demanda.</p>
+
+        <p><strong>Fórmula de preço:</strong><br>
+          <code>Preço = (Preço Inicial) × e^(-Estoque × Elasticidade × 0.0005)</code></p>
+
+        <ul>
+          <li>Se o estoque diminui, o preço sobe exponencialmente.</li>
+          <li>Se o estoque aumenta, o preço cai (mas nunca chega a zero).</li>
+        </ul>
+
+        <h3>Comandos dos Jogadores</h3>
+        <ul>
+          <li><code>/market</code> – Abre a loja.</li>
+          <li><code>/sell</code> – Vende itens do inventário. <strong>(Desativado temporariamente)</strong></li>
+          <li><code>/sellall</code> – Vende todos os itens de um tipo. <strong>(Desativado temporariamente)</strong></li>
+          <li><code>/sellhand</code> – Vende o item na mão. <strong>(Desativado temporariamente)</strong></li>
+        </ul>
+
+        <h3>Integração com Discord</h3>
+        <ul>
+          <li>Use <code>/link</code> para vincular sua conta do Discord ao mercado.</li>
+          <li>Com <code>/search</code> você pode visualizar os gráficos de preço de um produto.</li>
+          <li>Também é possível configurar alertas de preço dentro do jogo.</li>
+        </ul>
+
+      </div>
+    </main>
+  </mat-tab>
+</mat-tab-group>

@@ -1,0 +1,60 @@
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" ngSkipHydration>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">play_arrow</mat-icon>
+      Começando
+    </ng-template>
+    <main>
+      <div class="blog-post">
+        <h1>Proteja Sua Casa</h1>
+
+        <h2>Como Funciona?</h2>
+        <p>Ao colocar um bloco de proteção, você cria uma área onde:</p>
+        <ul>
+          <li>Só você e pessoas autorizadas podem construir/quebrar blocos.</li>
+          <li>Mobs, PVP e explosões não afetam a área.</li>
+          <li>Outros jogadores não podem roubar itens ou mexer em baús.</li>
+        </ul>
+
+        <h2>Blocos Disponíveis (No Nosso Servidor)</h2>
+        <p>Diferente dos servidores antigos, não será possível realizar craft, apenas compra.</p>
+        <table mat-table [dataSource]="protecaoDataSource" class="mat-elevation-z8 demo-table">
+          <ng-container matColumnDef="bloco">
+            <th mat-header-cell *matHeaderCellDef> Tipo </th>
+            <td mat-cell *matCellDef="let protecao"> {{protecao.bloco}} </td>
+          </ng-container>
+          <ng-container matColumnDef="preco">
+            <th mat-header-cell *matHeaderCellDef> Descricao </th>
+            <td mat-cell *matCellDef="let protecao"> {{protecao.preco}} </td>
+          </ng-container>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+        <h2>Como Usar?</h2>
+
+        <h3>1. Comprando um Bloco</h3>
+        <ol>
+          <li>Use o comando <code>/ps get</code> para abrir no chat as opções de compra.</li>
+          <li>Escolha o tamanho desejado (6x6, 32x32 ou 64x64) e clique no selecionado.</li>
+          <li>Confirme a compra (o preço será deduzido do seu saldo).</li>
+        </ol>
+
+        <h3>2. Colocando o Bloco</h3>
+        <p>Posicione o bloco no centro da área que deseja proteger.</p>
+        <p>A região será marcada automaticamente (você pode ver os limites com <code>/ps visualize</code>).</p>
+
+        <h3>3. Gerenciando a Proteção</h3>
+        <p>Faça isso sempre apontando para o bloco desejado:</p>
+        <ul>
+          <li><code>/ps add &lt;jogador&gt;</code> → Adiciona um amigo à sua proteção.</li>
+          <li><code>/ps remove &lt;jogador&gt;</code> → Remove um jogador.</li>
+          <li><code>/ps flag</code> → Ajusta permissões (ex.: permitir PvP ou não).</li>
+          <li><code>/ps unclaim</code> → Remove a proteção (só o dono pode fazer isso).</li>
+          <li><code>/ps hide</code> → Esconde seu bloco.</li>
+        </ul>
+      </div>
+    </main>
+  </mat-tab>
+</mat-tab-group>
+

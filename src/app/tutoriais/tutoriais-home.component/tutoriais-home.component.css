@@ -1,0 +1,39 @@
+.titulo{
+  h1{
+    text-align: center;
+  }
+}
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+
+  max-width: calc(140px * 6 + 10px * 5);
+
+  margin: 0 auto;
+  .tutoriais {
+    width: 140px;
+    height: 140px;
+    border: 2px solid #494949;
+    border-radius: 7px;
+    margin: 5px;
+    color: #494949;
+    text-align: center;
+    h1 {
+      display: block;
+      font-size: 20px;
+      transition: transform 0.2s ease;
+    }
+    &:hover {
+      transition-duration: 0.4s;
+      color: black;
+      cursor: pointer;
+      transform: scale(1.15);
+      border: 2px solid black;
+      h1 {
+        transform: scale(1.15);
+      }
+    }
+  }
+}

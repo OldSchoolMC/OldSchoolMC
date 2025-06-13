@@ -1,0 +1,17 @@
+.titulo{
+  h1{
+    text-align: center;
+  }
+  p{
+    font-size: 23px;
+    padding-left: 20px;
+  }
+}
+
+main{
+  ul li{
+    font-size: 20px;
+    list-style: none;
+  }
+}
+

@@ -1,0 +1,28 @@
+.titulo{
+  h1{
+    text-align: center;
+  }
+}
+
+main{
+  text-align: center;
+  .colaborador{
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    padding: 7px;
+    img{
+      width: 100px;
+      height: auto;
+    }
+    h1{
+      font-size: 23px;
+      text-align: center;
+    }
+    p{
+      text-align: center;
+
+    }
+  }
+}

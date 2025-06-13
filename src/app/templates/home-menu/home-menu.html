@@ -1,0 +1,38 @@
+<div class="example-container">
+  <mat-toolbar class="cor-toolbar">
+    <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+    <h1> OldschoolMC </h1>
+  </mat-toolbar>
+  <mat-sidenav-container class="example-sidenav-container">
+    <mat-sidenav #snav mode="over">
+      <mat-nav-list>
+        <a mat-list-item routerLink="">
+          <i class="material-icons">home</i><span> Home</span>
+        </a>
+      </mat-nav-list>
+      <mat-nav-list>
+        <a mat-list-item routerLink="staffs">
+          <i class="material-icons">badge</i><span> Staffs</span>
+        </a>
+      </mat-nav-list>
+      <mat-nav-list>
+        <a mat-list-item routerLink="regras">
+          <i class="material-icons">gavel</i><span> Regras</span>
+        </a>
+      </mat-nav-list>
+      <mat-nav-list>
+        <a mat-list-item routerLink="tutoriais">
+          <i class="material-icons">school</i><span> Tutoriais</span>
+        </a>
+      </mat-nav-list>
+      <mat-nav-list>
+        <a mat-list-item routerLink="">
+          <i class="material-icons">diamond</i><span> Vips</span>
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

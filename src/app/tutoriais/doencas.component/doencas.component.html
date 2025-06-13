@@ -1,0 +1,114 @@
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" ngSkipHydration>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">play_arrow</mat-icon>
+      Começando
+    </ng-template>
+    <main>
+      <div class="blog-post">
+
+        <h1>Epidemic - Um Sistema de Doenças no Servidor</h1>
+
+        <section>
+          <h2>Ferimentos Físicos</h2>
+          <ul>
+            <li><strong>Cortes</strong> – Causam sangramento contínuo se não forem tratados.</li>
+            <li><strong>Perna Quebrada</strong> – Reduz a velocidade de movimento. Cura com tala + poção.</li>
+            <li><strong>Fraturas</strong> – Ignorá-las causa dano adicional com o tempo.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Doenças</h2>
+          <ul>
+            <li><strong>Leves (Febre, Náusea)</strong> – Causam fadiga e fome acelerada.</li>
+            <li><strong>Graves (Peste, Cólera)</strong> – Podem causar cegueira, confusão e dano contínuo.</li>
+            <li><strong>Contágio</strong> – Algumas doenças se espalham entre jogadores próximos.</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">play_arrow</mat-icon>
+      Começando
+    </ng-template>
+    <main>
+      <div class="blog-post">
+        <h1>Como se Proteger?</h1>
+
+        <h3>Medicina Primitiva</h3>
+        <ul>
+          <li>Bandagens</li>
+          <li>Poções caseiras</li>
+        </ul>
+
+        <h3>Medicina Avançada</h3>
+        <ul>
+          <li>Antibióticos e afins</li>
+        </ul>
+
+        <h3>Prevenção</h3>
+        <ul>
+          <li>Coma alimentos cozidos (evite carne crua!)</li>
+          <li>Use roupas adequadas (couro para frio, tecido leve para calor)</li>
+        </ul>
+      </div>
+    </main>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">play_arrow</mat-icon>
+      Começando
+    </ng-template>
+    <main>
+      <div class="blog-post">
+        <h1>Fiquei doente / ferido... E agora?</h1>
+        <p>Não se preocupe. Os remédios estão disponíveis no menu <strong>/epidemic recipes</strong></p>
+      </div>
+    </main>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">play_arrow</mat-icon>
+      Começando
+    </ng-template>
+    <main>
+      <div class="blog-post">
+        <h1>Comandos do Epidemic</h1>
+
+        <ul>
+          <li>
+            <strong>/temp</strong><br>
+            → Mostra sua temperatura atual
+          </li>
+          <li>
+            <strong>/temp info</strong><br>
+            → Detalhes extras:
+            <ul>
+              <li>Efeitos ativos (ex: "Você está com calafrios!")</li>
+              <li>Dicas para regular temperatura (ex: "Use uma armadura de couro para se aquecer")</li>
+            </ul>
+          </li>
+          <li>
+            <strong>/health</strong><br>
+            → Verifica seu estado de saúde:
+            <ul>
+              <li>Ferimentos (sangramento, fraturas)</li>
+              <li>Doenças (febre, peste, etc)</li>
+              <li>Necessidades (hidratação, fome)</li>
+            </ul>
+          </li>
+          <li>
+            <strong>/epidemic recipes</strong><br>
+            → Lista todos os remédios disponíveis.<br>
+            Clique em um item para ver a receita de craft.
+          </li>
+        </ul>
+
+        <p><strong>Dica:</strong> Tenha sempre remédios em mãos.</p>
+      </div>
+    </main>
+  </mat-tab>
+</mat-tab-group>
