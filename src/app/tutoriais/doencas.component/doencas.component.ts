@@ -16,7 +16,7 @@ import {MatTableModule} from '@angular/material/table';
     MatIconModule,
     MatListModule,
     MatTableModule,
-    MatTabsModule,],
+    MatTabsModule],
   templateUrl: './doencas.component.html',
   styleUrl: './doencas.component.css'
 })

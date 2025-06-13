@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Oldschool": {
+    "OldSchoolMC": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -37,11 +37,12 @@
           },
           "configurations": {
             "production": {
+              "sourceMap": true,
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "200kB",
+                  "maximumError": "3MB"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -63,10 +64,11 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Oldschool:build:production"
+              "buildTarget": "OldSchoolMC:build:production",
+              "baseHref": "/OldSchoolMC/"
             },
             "development": {
-              "buildTarget": "Oldschool:build:development"
+              "buildTarget": "OldSchoolMC:build:production"
             }
           },
           "defaultConfiguration": "development"

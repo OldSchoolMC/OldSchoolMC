@@ -7,13 +7,13 @@
 main{
   text-align: center;
   .colaborador{
-    width: 150px;
+    width: 200px;
     margin: 10px;
     text-align: center;
     display: inline-block;
     padding: 7px;
     img{
-      width: 100px;
+      width: 200px;
       height: auto;
     }
     h1{

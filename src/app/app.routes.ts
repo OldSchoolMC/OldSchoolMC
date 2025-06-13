@@ -12,6 +12,7 @@ import {VillagersComponent} from './tutoriais/villagers.component/villagers.comp
 import {LivrosEncantados} from './tutoriais/livros-encantados/livros-encantados';
 import {VipsComponent} from './vips.component/vips.component';
 import {DoencasComponent} from './tutoriais/doencas.component/doencas.component';
+import {CriarLoja} from './tutoriais/criar-loja/criar-loja';
 
 export const routes: Routes = [
   {
@@ -42,6 +43,9 @@ export const routes: Routes = [
       },
       {
         path: 'tutoriais/doencas', component: DoencasComponent
+      },
+      {
+        path: 'tutoriais/criar-loja', component: CriarLoja
       },
       {
         path: 'staffs', component: StaffsHomeComponent

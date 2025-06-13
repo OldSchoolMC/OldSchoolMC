@@ -12,10 +12,11 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 })
 export class CarouselComponent {
   slides = [
-    {img: 'https://i.ytimg.com/vi/AQ9jZEc5aoU/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBKtKDK8d7oE8RdHIm2y5kulZDEZA', alt: "Imagem1"},
-    {img: "https://uploads.folhavitoria.com.br/2024/11/1YoknH5D-c5967ef0-cfec-11ee-b171-0907e3a71f38-minified.webp", alt: "Imagem2"},
-    {img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmdVRMpqyBYpEUUX-Iq1grww1hWMNR1A9DnA&s", alt: "Imagem3"},
-    {img: "https://pm1.aminoapps.com/6550/56d98e5191fe31fae8c0aeb380ec4b8c5d6af174_hq.jpg", alt: "Imagem4"}
+    {img: 'imagens/carousel/img_1.png', alt: "Imagem1"},
+    {img: 'imagens/carousel/img_2.png', alt: "Imagem2"},
+    {img: 'imagens/carousel/img_3.png', alt: "Imagem3"},
+    {img: 'imagens/carousel/img_4.png', alt: "Imagem4"},
+    {img: 'imagens/carousel/img_5.png', alt: "Imagem5"},
   ];
 
   slideConfig = {

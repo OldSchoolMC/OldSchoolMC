@@ -10,5 +10,5 @@ import {HomeFooter} from './templates/home-footer/home-footer';
   styleUrl: './app.css',
 })
 export class App {
-  protected title = 'Oldschool';
+  protected title = 'OldschoolMC';
 }
