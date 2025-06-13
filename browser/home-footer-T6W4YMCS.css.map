@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/templates/home-footer/home-footer.css"],
+  "sourcesContent": ["footer{\r\n  background-color: rgba(0, 0, 0, 0.836);\r\n  padding: 50px 0 ;\r\n\r\n  h1{\r\n    text-align: center;\r\n    color:white;\r\n    font-size: 20px;\r\n  }\r\n}\r\n"],
+  "mappings": "AAAA,OACE,iBAAkB,UADpB,QAEW,KAAK,CAOhB,CATA,OAIE,GACE,WAAY,OACZ,MAAM,KACN,UAAW,IACb",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/templates/home-menu/home-menu.css"],
+  "sourcesContent": [".example-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  position: absolute;\r\n  top: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n}\r\n\r\n.example-is-mobile .example-toolbar {\r\n  position: fixed;\r\n  /* Make sure the toolbar will stay on top of the content as it scrolls past. */\r\n  z-index: 2;\r\n}\r\n\r\nh1.example-app-name {\r\n  margin-left: 8px;\r\n}\r\n\r\n.example-sidenav-container {\r\n  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This\r\n     causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */\r\n  flex: 1;\r\n}\r\n\r\n.example-is-mobile .example-sidenav-container {\r\n  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the\r\n     `<body>` to be our scrolling element for mobile layouts. */\r\n  flex: 1 0 auto;\r\n}\r\n\r\n.cor-toolbar{\r\n  background-color: rgb(236, 236, 236);\r\n}\r\n\r\n.mat-drawer-transition .mat-drawer-content{\r\n  max-width: 100%;\r\n}\r\n"],
+  "mappings": "AAAA,CAAC,kBACC,QAAS,KACT,eAAgB,OAChB,SAAU,SACV,MAAK,CAIP,CAEA,CAAC,kBAAkB,CAAC,gBAClB,SAAU,MAEV,QAAS,CACX,CAEA,EAAE,CAAC,iBACD,YAAa,GACf,CAEA,CAAC,0BAGC,KAAM,CACR,CAEA,CAhBC,kBAgBkB,CANlB,0BASC,KAAM,EAAE,EAAE,IACZ,CAEA,CAAC,YACC,iBAAkB,OACpB,CAEA,CAAC,sBAAsB,CAAC,mBACtB,UAAW,IACb",
+  "names": []
+}
